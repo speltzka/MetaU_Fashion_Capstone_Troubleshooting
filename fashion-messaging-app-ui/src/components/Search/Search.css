@@ -1,0 +1,15 @@
+.searchBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .searchInput:focus {
+    outline: none !important;
+    border-color: var(--main-color);
+  }
+
+  .searchInput {
+    height: 20px;
+    width: 300px;
+  }
