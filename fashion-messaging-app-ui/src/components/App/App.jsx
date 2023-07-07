@@ -1,6 +1,7 @@
 import "./App.css"
 import Search from "../Search/Search";
 import Navbar from "../Navbar/Navbar";
+import FashionItems from "../FashionItems/FashionItems";
 import { useEffect, useState } from "react";
 import { createClient } from "pexels";
 
@@ -27,7 +28,8 @@ function App() {
        <h1>Aesthetik.</h1>
        <Search />
        <Navbar />
-      </div>       
+      </div>    
+      <FashionItems photos = {photos}/>   
     </div> 
   );
 }
