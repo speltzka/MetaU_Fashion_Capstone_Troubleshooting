@@ -4,7 +4,8 @@ import Navbar from "../Navbar/Navbar";
 import { useEffect, useState } from "react";
 import { createClient } from "pexels";
 
-const clientAPI = createClient("06ZcwjgbmJBM8T2TxLUZ5iwdXXGxiAgz0Z018b7QPKwR1ExipkFjaAuw");
+const API_KEY = "06ZcwjgbmJBM8T2TxLUZ5iwdXXGxiAgz0Z018b7QPKwR1ExipkFjaAuw"
+const clientAPI = createClient(API_KEY);
 const query = "Fashion";
 const PHOTOS = 100;
 
@@ -19,6 +20,7 @@ export default function App() {
         console.error("Error fetching photos:", error);
       });
   }, []);
+
   return (
     <div>
       <div className="container">
@@ -29,3 +31,7 @@ export default function App() {
     </div> 
   );
 }
+
+
+
+
