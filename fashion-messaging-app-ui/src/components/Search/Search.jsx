@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Search.css";
-import { FaSearch} from 'react-icons/fa';
+import { FaSearch} from "react-icons/fa";
 
 export default function Search() {
   return (
